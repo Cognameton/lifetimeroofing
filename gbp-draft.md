@@ -3,7 +3,7 @@
 Manual setup (API approval still pending for other profiles, and GBP verification is tied to a real Google account + Google's own identity check for the business — this has to be done by you or the owner directly, not automated). Steps below, using content from this file.
 
 ## Setup Steps
-1. Go to business.google.com, sign in with the account that should own this listing (recommend using `lifetimerns@gmail.com` so the owner keeps direct control).
+1. Go to business.google.com, sign in with `pirate.ninja.tech@gmail.com` — the shared account used to manage all PNL Rank and Recovery client GBPs (keeps GBP API approval to a single account instead of per-client).
 2. "Add your business" → enter the name and info from **Basic Info** below.
 3. When asked about location, choose **service-area business** (no walk-in customers) and enter the service area from below — do not enter a public street address.
 4. Paste the **Business Description** and select the **Services** and **Attributes** listed below.
@@ -18,7 +18,7 @@ Manual setup (API approval still pending for other profiles, and GBP verificatio
 - **Business type:** Service-area business — check "I deliver goods and services to my customers" and hide the street address (no public storefront)
 - **Service area:** Olive Branch, MS + 60 mile radius (add Southaven, Hernando, Collierville, Germantown, Bartlett, Lakeland individually if the area picker supports city-by-city entry, then extend to the full radius)
 - **Phone:** (901) 292-6207
-- **Email:** lifetimerns@gmail.com (not public-facing on GBP, but keep on file for verification)
+- **Email:** lifetimerns@gmail.com (owner's contact email — public-facing/CTA use only; the listing itself is managed under `pirate.ninja.tech@gmail.com`, not this address)
 - **Website:** https://lifetimeroofingnservices.com (live)
 
 ## Business Description (750 char max)
