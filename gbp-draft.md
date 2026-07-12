@@ -48,8 +48,8 @@ Manual setup (API approval still pending for other profiles, and GBP verificatio
 - Mon–Sat: 8:00 AM – 8:30 PM
 - Sun: Closed
 
-## Open Items — Need From Owner
-- **Year business opened / founded** — GBP asks for this; "25+ years combined experience" (team experience) isn't the same as the company's founding date.
+## Open Items
+- **Year business opened / founded** — skipped for now (optional field on GBP). "25+ years combined experience" is team experience, not the company's founding date — add later if the owner provides it.
 - Confirm no conflict with the unrelated parked domain `lifetimeroofingservices.com` before using it anywhere in listings.
 
 ## Post-Setup
