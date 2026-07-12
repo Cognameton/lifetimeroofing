@@ -61,3 +61,16 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000
+
+## Deployment (hermes-vps)
+
+The VPS runs a real `git clone` of this repo at `~/lifetimeroofing` (via a read-only deploy key, SSH alias `github-lifetimeroofing`), not a manual file copy. `docker-compose.yml` runs `nginx:alpine` bound to `127.0.0.1:8090`; Traefik routes `lifetimeroofingnservices.com` + `www` to it with a Let's Encrypt cert.
+
+To ship an update:
+
+```bash
+git push                                   # from local
+ssh hermes-vps "cd ~/lifetimeroofing && git pull && docker compose up -d"
+```
+
+`docker compose up -d` picks up any changed files by recreating the container; no image rebuild needed since it's a bind-mounted static site.
