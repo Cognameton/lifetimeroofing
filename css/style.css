@@ -429,6 +429,52 @@ h3 { font-size: 1.3rem; margin-bottom: .75rem; }
 }
 
 /* =========================================================
+   FAQ
+   ========================================================= */
+.faq {
+    padding: 80px 0;
+    background: var(--light);
+}
+.faq-list {
+    max-width: 800px;
+    margin-top: 1.4rem;
+}
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius-lg);
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px 24px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+    content: "+";
+    flex-shrink: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--accent-dark);
+    transition: var(--transition);
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item[open] summary { border-bottom: 1px solid var(--gray-light); }
+.faq-item p {
+    padding: 4px 24px 22px;
+    color: var(--gray);
+}
+
+/* =========================================================
    STORM / CTA BANNER
    ========================================================= */
 .cta-banner {
